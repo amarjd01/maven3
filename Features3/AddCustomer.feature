@@ -1,7 +1,6 @@
-Feature: Admin
+Feature: Add Customer
 
-Scenario Outline:
-: To validate add customer page with valid credentials
+Scenario Outline: To validate add customer page with valid credentials
 Given user open Chrome Browser
 When user launch URL as "https://admin-demo.nopcommerce.com/login"
 And user enters email as "admin@yourstore.com" password as "admin"
