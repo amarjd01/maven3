@@ -61,7 +61,7 @@ public class StepDefinition3 extends Base3 {
 	    Thread.sleep(2000);
 	}
 	
-/*	@When("user click on customers menu")
+	@When("user click on customers menu")
 	public void user_click_on_customers_menu() throws Exception {
 		addCust.clickOnCustomerMenu();
 		Thread.sleep(2000);	    
@@ -114,9 +114,9 @@ public class StepDefinition3 extends Base3 {
 	public void user_can_see_confirmation_msg_as(String string) {
 		Assert.assertTrue(driver.findElement(By.tagName("body")).getText().contains("The new customer has been added successfully."));
 	   
-	} */
+	} 
 	
-/*	@When("user click on Reports menu")
+	@When("user click on Reports menu")
 	public void user_click_on_reports_menu() throws Exception {
 	   rP.clickOnReports();
 	   Thread.sleep(2000);
@@ -157,10 +157,10 @@ public class StepDefinition3 extends Base3 {
 		rP.clickOnRunReports();
 		Thread.sleep(2000);
 	    
-	} */
+	} 
 	
 	
-/*	@When("user click on Catalog menu")
+	@When("user click on Catalog menu")
 	public void user_click_on_catalog_menu() throws Exception {
 		ctl.clickOnCatalog();
 		Thread.sleep(2000);
@@ -206,15 +206,10 @@ public class StepDefinition3 extends Base3 {
 	public void display_order_should_be_shown_as(String v) {
 		Assert.assertEquals(v, ctl.hpValue());
 	    
-	}	*/
+	}	
 	
-	@When("user click on Catalog menu")
-	public void user_click_on_catalog_menu() throws Exception {
-	    ctl.clickOnCatalog();
-	    Thread.sleep(2000);
-	}
 
-	@When("user click on Product-Tags button")
+/*	@When("user click on Product-Tags button")
 	public void user_click_on_product_tags_button() throws Exception {
 	    pt.clickOnProductTags();
 	    Thread.sleep(2000);
@@ -243,7 +238,7 @@ public class StepDefinition3 extends Base3 {
 	public void tagged_product_should_be_shown_integer_value_as(String value) {
 		Assert.assertEquals(pt.productTagsValue(), value);
 	    
-	}
+	} */
 	
 	@Then("user close the browser")
 	public void user_close_the_browser() {
